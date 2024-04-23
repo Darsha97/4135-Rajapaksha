@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
  
-import Home from './screens/Home';
-import AboutUs from './screens/AboutUs';
-import Services from './screens/Services';
-import Branches from './screens/Branches';
-import Packages from './screens/Packages';
-import ContactUs from './screens/ContactUs';
-import Reservation from './screens/Reservation';
-import Login from './screens/LoginPage';
-import SignUp from './screens/SignUp';
-import Create from './screens/create';
-import EditPost from './screens/editPost'; 
-import LoginUser from './screens/Login'; 
-import Admin from './screens/Admin';
+import Home from './Pages/Home';
+import AboutUs from './Pages/AboutUs';
+import Services from './Pages/Services';
+import Branches from './Pages/Branches';
+import Packages from './Pages/Packages';
+import ContactUs from './Pages/ContactUs';
+import Reservation from './Pages/Reservation';
+import Login from './Pages/LoginPage';
+import SignUp from './Pages/SignUp';
+import Create from './Pages/create';
+import EditPost from './Pages/editPost'; 
+import LoginUser from './Pages/Login'; 
+import Admin from './Pages/Admin';
  
 
 function App() {
