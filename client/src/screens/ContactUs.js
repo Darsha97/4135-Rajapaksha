@@ -141,9 +141,7 @@ render(){
           <Link to="/services" className="navbar-item" style={linkStyle}>
             Services
           </Link>
-          <Link to="/branches" className="navbar-item" style={linkStyle}>
-            Branches
-          </Link>
+          
           <Link to="/packages" className="navbar-item" style={linkStyle}>
             Packages
           </Link>

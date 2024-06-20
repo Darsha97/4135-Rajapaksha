@@ -14,11 +14,24 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8090:8000"
+      - "8090:8090"
     depends_on:
       - mongodb
+    environment:
+      - MONGO_URL=mongodb+srv://Darsha:Darsha97@mern.ezs5tk2.mongodb.net/Services?retryWrites=true&w=majority
+    volumes:
+      - .:/usr/src/backend  # Ensure the path matches the WORKDIR in the Dockerfile
 
   mongodb:
     image: mongo
     ports:
       - "27017:27017"
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+networks:
+  default:
+    driver: bridge

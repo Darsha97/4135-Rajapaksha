@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './screens/Home';
 import AboutUs from './screens/AboutUs';
 import Services from './screens/Services';
-import Branches from './screens/Branches';
+//import Branches from './screens/Branches';
 import Packages from './screens/Packages';
 import ContactUs from './screens/ContactUs';
 import Reservation from './screens/Reservation';
@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} /> 
         <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/branches" element={<Branches />} />
+      
         <Route path="/packages" element={<Packages />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/reservation" element={<Reservation />} />
