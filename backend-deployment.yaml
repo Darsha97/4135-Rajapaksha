@@ -22,16 +22,4 @@ spec:
         env:
         - name: NODE_ENV
           value: "production"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: backend-service
-spec:
-  selector:
-    app: backend
-  ports:
-  - protocol: TCP
-    port: 8090
-    targetPort: 8090
-  type: NodePort
+ 
