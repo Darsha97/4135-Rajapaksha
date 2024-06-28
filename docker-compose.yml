@@ -14,9 +14,13 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8090:8000"
+      - "8090:8090"
     depends_on:
+    
       - mongodb
+    environment:
+      - PORT=8090
+      - DB_URL=mongodb://mongodb:27017/Services
 
   mongodb:
     image: mongo

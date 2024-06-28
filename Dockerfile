@@ -13,8 +13,9 @@ RUN npm install
 # Copy the rest of the backend application
 COPY . .
 
-# Expose port 8000 to the outside world
+# Expose port 8090 to the outside world
 EXPOSE 8090
+
 
 # Command to run the backend application
 CMD ["npm", "run", "server"]
