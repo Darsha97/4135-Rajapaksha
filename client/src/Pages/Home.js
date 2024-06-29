@@ -156,7 +156,7 @@ function Home() {
             Home
           </Link>
           <Link to="/about" className="navbar-item" style={linkStyle}>
-            About Us
+            About meeeeeeeeeeeee
           </Link>
           <Link to="/services" className="navbar-item" style={linkStyle}>
             Services
